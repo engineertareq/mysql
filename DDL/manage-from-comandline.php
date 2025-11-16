@@ -12,3 +12,5 @@ SHOW command_db_t1;
 USE command_db_t1;
 <!-- CRETE TABLE IN  COMMAND LINE  -->
  CREATE TABLE userss(id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(125) NOT NULL);
+ <!-- Select Table -->
+  SHOW COLUMNS FROM sdmsubscriptions;
