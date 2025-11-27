@@ -3,9 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        .table, th, td {
+        table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
+            width: 900px;
             border-radius: 1px;
         }
     </style>
@@ -78,5 +79,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+<a href="product.php">Products</a>
 </body>
 </html>

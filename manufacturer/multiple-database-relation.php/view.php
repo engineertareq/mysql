@@ -1,0 +1,2 @@
+CREATE VIEW product_list as
+SELECT  product.id, product.name, product.price, manufacturer.name AS "Company" FROM product, manufacturer WHERE product.manufacturer_id = manufacturer.id AND product.price > 50;

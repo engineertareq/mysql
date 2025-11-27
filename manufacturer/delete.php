@@ -19,5 +19,5 @@ if (isset($_GET['id'])) {
 $db->close();
 
 
-header("Refresh:2; url=manufracturer.php"); 
+header("location: manufracturer.php"); 
 ?>
