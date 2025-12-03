@@ -1,7 +1,6 @@
 <?php
 include 'db.php';
 
-// Fetch student IDs and names
 $sql = "SELECT id, name FROM student";
 $result = $conn->query($sql);
 ?>
