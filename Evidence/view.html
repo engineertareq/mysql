@@ -1,0 +1,29 @@
+CREATE VIEW student_data AS
+SELECT 
+    student.id AS ID,
+    student.name AS Name,
+    student.address AS Address,
+    student.mobile AS Contact,
+    result.module_name AS Module,
+    result.totalmarks AS Marks
+FROM student
+LEFT JOIN result 
+    ON student.id = result.student_id;
+
+    <hr>
+
+
+    <!-- View -->
+
+    SELECT student.id, student.name, student.address, result.module_name, result.totalmarks FROM student, result WHERE student.id = result.student_id;
+
+    <hr>
+
+    <!-- Trigger -->
+    DELETE FROM result WHERE student_id = old.id
+
+    <hr>
+
+    <!-- Procedure -->
+     INSERT INTO `student`(`name`, `address`, `mobile`) 
+ VALUES (s_name, s_address, s_phone)

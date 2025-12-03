@@ -1,0 +1,1 @@
+DELETE FROM result WHERE student_id = old.id
